@@ -1,0 +1,116 @@
+.about {
+   padding: 180px 0 100px;
+   @media (max-width: 767px) {
+      padding: 100px 0px;
+   }
+   @media (max-width: 565px) {
+      padding: 100px 0px 60px;
+   }
+}
+.about-inner {
+   display: flex;
+   @media (max-width: 991px) {
+      flex-direction: column-reverse;
+   }
+}
+.about__photo {
+   flex: 0 0 50%;
+   @media (max-width: 991px) {
+      flex: 0 0 auto;
+   }
+}
+.about__photo-container {
+   width: 480px;
+   height: 550px;
+   box-shadow: 0px 5px 10px rgba(var(--menu-line), 0.5);
+   animation: photo-anim 5s linear infinite;
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 5px;
+   }
+   @media (max-width: 991px) {
+      margin: 0 auto;
+   }
+   @media (max-width: 565px) {
+      width: 100%; 
+   }
+}
+@keyframes photo-anim {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(30px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+.about__content {
+   flex: 0 0 50%;
+   padding: 0px 0px 0px 30px;
+   @media (max-width: 991px) {
+      flex: 0 0 auto;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 50px 0px;
+   }
+}
+.about__text {
+   max-width: 480px;
+   margin: 0px 0px 10px 0px;
+   &:last-of-type {
+      margin: 0px 0px 30px 0px;
+   }
+   font-size: 18px;
+   color: var(--main-text);
+   font-weight: 300;
+   letter-spacing: 1px;
+   
+   & a {
+      color: var(--accent-color);
+      font-weight: 500;
+      transition: 0.4s ease;
+      position: relative;
+      &::before {
+         content: '';
+         display: block;
+         width: 100%;
+         height: 1px;
+         background: var(--accent-color);
+         position: absolute;
+         bottom: 2px;
+         left: 0;
+         transition: 0.4s ease;
+      }
+      &:hover {
+         color: #fff;
+         &::before {
+            background: #fff;
+         }
+      }
+      
+   }
+   @media (max-width: 991px) {
+      max-width: none;
+   }
+}
+.about__text-bold {
+   color: var(--main-text);
+   font-size: 22px;
+   font-weight: 400;
+   margin: 0px 0px 15px 0px;
+   span {
+      color: var(--accent-color);
+      font-weight: 700;
+   }
+}
+.about__btn-container {
+   width: 100%;
+   text-align: right;
+}
+.about__btn {
+   margin: 10px 0px 0px 0px;
+}

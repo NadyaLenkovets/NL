@@ -1,0 +1,164 @@
+// =======  colors  =======
+
+:root {
+   // dark mode
+   --main-bg: #0c0d0d;
+   --accent-color: #24a89b;
+   --main-text: #FAF8EB;
+   --gray: #767676;
+   --light: #FAF8EB;
+   --form-bg: #2c2c2d;
+   --menu-line: 250, 248, 235;
+}
+
+
+// =======  sizes  =======
+
+$minwidth: 320px;
+$mw: 1200;
+
+
+// ОСНОВНАЯ СЕТКА
+
+.container {
+   width: 100%;
+   max-width: $mw + px;
+   margin: 0 auto;
+   padding: 0 20px;
+   @media (max-width: 565px) {
+      padding: 0 10px;
+   }
+}
+
+// АНИМАЦИИ
+
+.anim {
+   // анимируемый элемент
+   transform: translateY(50%);
+   opacity: 0;
+   transition: all 1.5s ease;
+   &.anim-active {
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+// ПОДКЛЮЧЕНИЕ БЛОКОВ
+
+@import "_loader";
+@import "_nullstyle";
+@import "_fonts";
+@import "_buttons";
+@import "_button-up";
+@import "_header";
+@import "_intro";
+@import "_about";
+@import "_technologies";
+@import "_portfolio";
+@import "testimonials";
+@import "contacts";
+@import "_footer";
+@import "_modals";
+
+
+// ОСНОВНЫЕ СТИЛИ
+
+html {
+   scroll-behavior: smooth;
+   &.preloader {
+      .header,
+      .intro {
+         opacity: 1;
+      }
+   }
+}
+body {
+   font-family: 'Circe', sans-serif;
+   font-size: 14px;
+   line-height: 1.4;
+   background-color: var(--main-bg);
+   &.no-scroll {
+      overflow-y: hidden;
+   }
+   &.light {
+   // light mode
+   --main-bg: #FAF8EB;
+   --accent-color: #24a89b;
+   --main-text: #2c2c2d;
+   --gray: #767676;
+   --form-bg: #e2e2e2;
+   --menu-line: 44, 44, 45;
+      .theme-switcher__body  {
+         background: url(../img/header/moon.svg) no-repeat #333;
+         background-size: 17px;
+         background-position: center center;
+      }
+      .theme-switcher {
+         @media (any-hover: hover) {
+            &:hover {
+               .theme-switcher__body {
+                  &::after {
+                     display: block;
+                  }
+                  
+               }
+            }
+         }  
+      }
+   }
+   &.dark {
+      .theme-switcher {
+         @media (any-hover: hover) {
+            &:hover {
+               .theme-switcher__body {
+                  &::before {
+                     display: block;
+                  }
+                  
+               }
+            }
+         }
+      }
+   }
+}
+.pretitle {
+   font-size: 18px;
+   color: #a8a7a8;
+   font-weight: 300;
+   letter-spacing: 5px;
+   margin: 0px 0px 15px 0px;
+}
+.title {
+   font-size: 45px;
+   color: var(--main-text);
+   font-weight: 700;
+   font-style: italic;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   @media (max-width: 767px) {
+      font-size: 36px;
+   }
+   &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin: 30px 0px 50px;
+      background-color: var(--gray);
+      @media (max-width: 767px) {
+         margin: 10px 0px 40px;
+      }
+   }
+}
+.text {
+   font-size: 16px;
+   color: var(--main-text);
+   font-weight: 300;
+   letter-spacing: 1px;
+   span {
+      font-weight: 700;
+      color: var(--accent-color);
+   }
+}
+
+

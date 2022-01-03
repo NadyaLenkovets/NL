@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+   <html lang="ru">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HTML-верстальщик Надежда Ленковец, Гомель</title>
+
+      <!-- favicon
+	================================================== -->
+
+      <link rel="shortcut icon" href="favicon.png">
+
+      <!-- fonts
+   ================================================== -->
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+      <!-- js, css
+   ================================================== -->
+
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+
+   <body class="dark">
+      <!-- svg-спрайт -->
+      <svg style="display: none;">
+
+         <symbol id="instagram" viewBox="0 0 511 511.9">
+            <g>
+               <path
+                  d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0" />
+               <path
+                  d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0" />
+               <path
+                  d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0" />
+            </g>
+         </symbol>
+
+         <symbol id="vk" viewBox="0 0 24 24">
+            <g>
+               <path
+                  d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+            </g>
+         </symbol>
+
+         <symbol id="linkedIn" viewBox="0 0 552.77 552.77">
+            <g>
+               <path d="M17.95,528.854h71.861c9.914,0,17.95-8.037,17.95-17.951V196.8c0-9.915-8.036-17.95-17.95-17.95H17.95
+            C8.035,178.85,0,186.885,0,196.8v314.103C0,520.816,8.035,528.854,17.95,528.854z" />
+               <path d="M17.95,123.629h71.861c9.914,0,17.95-8.036,17.95-17.95V41.866c0-9.914-8.036-17.95-17.95-17.95H17.95
+            C8.035,23.916,0,31.952,0,41.866v63.813C0,115.593,8.035,123.629,17.95,123.629z" />
+               <path d="M525.732,215.282c-10.098-13.292-24.988-24.223-44.676-32.791c-19.688-8.562-41.42-12.846-65.197-12.846
+            c-48.268,0-89.168,18.421-122.699,55.27c-6.672,7.332-11.523,5.729-11.523-4.186V196.8c0-9.915-8.037-17.95-17.951-17.95h-64.192
+            c-9.915,0-17.95,8.035-17.95,17.95v314.103c0,9.914,8.036,17.951,17.95,17.951h71.861c9.915,0,17.95-8.037,17.95-17.951V401.666
+            c0-45.508,2.748-76.701,8.244-93.574c5.494-16.873,15.66-30.422,30.488-40.649c14.83-10.227,31.574-15.343,50.24-15.343
+            c14.572,0,27.037,3.58,37.393,10.741c10.355,7.16,17.834,17.19,22.436,30.104c4.604,12.912,6.904,41.354,6.904,85.33v132.627
+            c0,9.914,8.035,17.951,17.949,17.951h71.861c9.914,0,17.949-8.037,17.949-17.951V333.02c0-31.445-1.982-55.607-5.941-72.48
+            S535.836,228.581,525.732,215.282z" />
+            </g>
+         </symbol>
+
+         <symbol id="gitHub" viewBox="0 0 512 512">
+            <g>
+               <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
+			c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
+			c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
+			c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368
+			c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68
+			c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672
+			c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992
+			c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
+			c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z" />
+            </g>
+         </symbol>
+
+         <symbol id="link" viewBox="0 0 482.8 482.8">
+            <g>
+               <path d="M255.2,209.3c-5.3,5.3-5.3,13.8,0,19.1c21.9,21.9,21.9,57.5,0,79.4l-115,115c-21.9,21.9-57.5,21.9-79.4,0l-17.3-17.3
+               c-21.9-21.9-21.9-57.5,0-79.4l115-115c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-115,115C8.7,322.7,0,343.6,0,365.8
+               c0,22.2,8.6,43.1,24.4,58.8l17.3,17.3c16.2,16.2,37.5,24.3,58.8,24.3s42.6-8.1,58.8-24.3l115-115c32.4-32.4,32.4-85.2,0-117.6
+               C269.1,204,260.5,204,255.2,209.3z" />
+               <path d="M458.5,58.2l-17.3-17.3c-32.4-32.4-85.2-32.4-117.6,0l-115,115c-32.4,32.4-32.4,85.2,0,117.6c5.3,5.3,13.8,5.3,19.1,0
+               s5.3-13.8,0-19.1c-21.9-21.9-21.9-57.5,0-79.4l115-115c21.9-21.9,57.5-21.9,79.4,0l17.3,17.3c21.9,21.9,21.9,57.5,0,79.4l-115,115
+               c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l115-115c15.7-15.7,24.4-36.6,24.4-58.8
+               C482.8,94.8,474.2,73.9,458.5,58.2z" />
+            </g>
+         </symbol>
+
+         <symbol id="figma" viewBox="0 0 256 256">
+            <g>
+               <path d="M186.61523,94.00049A41.97934,41.97934,0,0,0,162,18.001H94A41.97934,41.97934,0,0,0,69.38477,94.00049a41.93894,41.93894,0,0,0,.00048,67.99939A41.9892,41.9892,0,1,0,136,195.99951V160.948a41.97356,41.97356,0,1,0,50.61523-66.94751ZM188,60.001a26.02916,26.02916,0,0,1-25.98047,25.99951L162,86l-.03857.001L136,86V34.001h26A26.02947,26.02947,0,0,1,188,60.001Zm-120,0a26.02947,26.02947,0,0,1,26-26h26V86H94l-.019.00049A26.02934,26.02934,0,0,1,68,60.001ZM68,128a26.02926,26.02926,0,0,1,25.981-25.99951L94,102.001l26-.00074V153.999L94,154A26.02947,26.02947,0,0,1,68,128Zm26,93.999A25.99951,25.99951,0,1,1,94,170l26-.00073v26.00024A26.02937,26.02937,0,0,1,94,221.999ZM162,154a25.99952,25.99952,0,0,1-.03857-51.999H162l.019-.00049A25.99976,25.99976,0,0,1,162,154Z"/>
+            </g>
+         </symbol>
+
+         <symbol id="adobe-xd" viewBox="0 0 50 50">
+            <g>
+               <path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 44 C 4 45.093063 4.9069372 46 6 46 L 44 46 C 45.093063 46 46 45.093063 46 44 L 46 6 C 46 4.9069372 45.093063 4 44 4 L 6 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 34.5 14 L 34.5 21.867188 L 34.5 21.875 C 33.893 20.564 32.823125 20 31.703125 20 C 29.303125 20 27 22.372 27 27.875 C 27 32.996 28.856469 36.3125 31.480469 36.3125 C 33.111469 36.3125 34.02 35.463 34.5 34.375 L 34.5 36 L 37 36 C 36.968 35.104 37 33.681 37 32.625 L 37 14 L 34.5 14 z M 13.035156 15 L 18.517578 25.5 L 13.035156 36 L 15.5 36 L 19.755859 27.873047 L 24 36 L 26.5 36 L 21 25.5 L 26.5 15 L 24 15 L 19.755859 23.126953 L 15.5 15 L 13.035156 15 z M 32.246094 22.111328 C 33.430094 22.111328 34.358328 23.525 34.486328 25.125 C 34.518328 25.476 34.486328 25.8685 34.486328 26.1875 L 34.486328 30.75 C 34.486328 30.75 34.457328 31.337 34.361328 31.625 C 33.817328 33.864 32.824641 34.263672 32.056641 34.263672 C 30.264641 34.263672 29.462891 31.139 29.462891 27.875 C 29.462891 24.772 30.198094 22.111328 32.246094 22.111328 z"/>
+            </g>
+         </symbol>
+
+         <symbol id="avocode" viewBox="0 0 1866 2500">
+            <g>
+               <path class="st0" d="M933,5.9C456.1,5.9,0,887.1,0,1561.1c0,516.1,416.9,933,933,933s933-416.9,933-933
+	            C1866,887.1,1409.9,5.9,933,5.9z M933,2027.6c-257.1,0-466.5-209.4-466.5-466.5c0-346.3,236.2-777.7,466.5-777.7
+	            s466.5,431.4,466.5,777.7C1399.5,1818.2,1190.1,2027.6,933,2027.6z"/>
+            </g>
+         </symbol>
+
+         <symbol id="photoshop" viewBox="0 0 485 485">
+            <g>
+               <path d="M321.27,328.414c-16.269,0-37.082-7.252-47.173-13.307l-9.743,39.196c13.307,7.252,33.866,12.299,56.916,12.299
+               c50.361,0,76.376-24.124,76.376-57.012c-0.379-25.891-14.412-42.887-47.932-54.333c-21.537-7.631-28.318-11.952-28.318-20.213
+               c0-8.988,7.506-14.412,20.813-14.412c15.136,0,30.177,5.803,38.185,10.122l9.714-37.839c-10.817-5.424-29.168-10.091-49.76-10.091
+               c-43.58,0-71.676,24.88-71.676,57.644c-0.379,20.938,13.655,40.774,50.139,52.976c20.432,6.906,25.856,11.194,25.856,20.182
+               C344.668,322.644,337.762,328.414,321.27,328.414z"/>
+	            <path d="M141.687,276.194c5.045,0.726,11.573,0.978,18.698,0.978c32.417,0,60.23-7.883,78.834-25.479
+                  c14.539-13.686,22.42-33.899,22.42-57.643c0-23.777-10.343-43.99-25.983-56.194c-16.146-13.055-40.268-19.456-74.167-19.456
+                  c-33.489,0-57.264,2.21-74.136,5.046v239.593h54.333V276.194z M141.782,162.012c3.847-1.105,11.479-2.209,22.547-2.209
+                  c27.465,0,42.885,13.276,43.01,35.572c0,24.911-18.132,39.669-47.3,39.669c-7.884,0-13.559-0.346-18.257-1.357V162.012z"/>
+	               <path d="M0,0v485h485V0H0z M455,455H30V30h425V455z"/>
+            </g>
+         </symbol>
+
+         <symbol id="vs-code" viewBox="0 0 48 48">
+            <g>
+               <path d="M33.87,7.28,18.49,22.08l-9-7L7.34,16.25V32l1.93,1.28L18.62,26,33.87,40.72l6.79-2.82V10.23Zm-23.58,21V19.7L14.45,24Zm22.29,1.83L24,24l8.58-6.13Z"/>
+            </g>
+         </symbol>
+
+         <symbol id="sublime-text" viewBox="0 0 24 24">
+            <g>
+               <path d="M23.071,0.003H0.929C0.419,0.003,0,0.422,0,0.932v22.136c0,0.51,0.419,0.929,0.929,0.929h22.142c0.51,0,0.924-0.414,0.929-0.924V0.932C24,0.422,23.581,0.003,23.071,0.003z M18.822,12.099l-0.005,4.125c0.04,0.423-0.232,0.387-0.332,0.361c0.289,0.117-0.108,0.219-0.108,0.219L5.817,20.812c-0.612,0.258-0.666-0.188-0.666-0.188s0.081-2.412,0.005-3.61c-0.075-1.198,0.564-1.219,0.564-1.219l5.29-1.615L6,12.567c-0.886-0.188-0.843-0.655-0.843-0.655L5.184,8.21C5.039,7.367,5.533,7.249,5.533,7.249l12.559-3.986c0,0,0.892-0.467,0.677,0.397L18.8,7.501c0,0,0.156,0.564-0.618,0.704L13.08,9.8l5.087,1.595C18.94,11.675,18.822,12.099,18.822,12.099z"/>
+            </g>
+         </symbol>
+
+         <symbol id="sun" viewBox="0 0 512 512">
+            <g>
+               <path d="m256 113.531c-78.558 0-142.469 63.911-142.469 142.469s63.911 142.469 142.469 142.469 142.469-63.911 142.469-142.469-63.911-142.469-142.469-142.469zm0 254.938c-62.016 0-112.469-50.453-112.469-112.469s50.453-112.469 112.469-112.469 112.469 50.453 112.469 112.469-50.453 112.469-112.469 112.469z"/><path d="m241 0h30v80.73h-30z"/><path d="m241 431.27h30v80.73h-30z"/><path d="m368.267 88.899h79.667v30h-79.667z" transform="matrix(.707 -.707 .707 .707 46.063 319.002)"/><path d="m64.064 393.102h79.668v30h-79.668z" transform="matrix(.707 -.707 .707 .707 -258.14 192.997)"/><path d="m431.27 241h80.73v30h-80.73z"/><path d="m0 241h80.73v30h-80.73z"/><path d="m88.899 64.065h30v79.668h-30z" transform="matrix(.707 -.707 .707 .707 -43.036 103.899)"/><path d="m393.101 368.268h30v79.667h-30z" transform="matrix(.707 -.707 .707 .707 -169.041 408.099)"/>
+
+            </g>
+         </symbol>
+
+         <symbol id="moon" viewBox="0 0 511 511.99982">
+            <g>
+               <path d="m334.28125 5.109375c-5.625 5.230469-7.558594 13.277344-4.921875 20.496094 9.371094 25.648437 14.125 52.75 14.125 80.554687 0 63.273438-24.640625 122.765625-69.378906 167.519532-44.746094 44.761718-104.253907 69.410156-167.550781 69.410156-27.738282 0-54.804688-4.75-80.449219-14.125-7.214844-2.636719-15.257813-.707032-20.492188 4.921875-5.234375 5.628906-6.582031 13.796875-3.425781 20.808593 20.492188 45.566407 53.339844 84.402344 94.984375 112.304688 42.679687 28.59375 92.480469 44.140625 144.027344 44.964844 36.664062.585937 72.347656-6.21875 106.058593-20.222656 32.480469-13.492188 61.652344-33.019532 86.703126-58.035157 25.046874-25.015625 44.609374-54.15625 58.148437-86.617187 13.535156-32.464844 20.390625-66.769532 20.386719-102.027344 0-1.328125-.007813-2.664062-.027344-3.996094-.753906-51.605468-16.292969-101.492187-44.929688-144.257812-27.929687-41.707032-66.816406-74.601563-112.449218-95.121094-7.011719-3.15625-15.179688-1.8125-20.808594 3.421875zm108.3125 108.40625c25.402344 37.933594 39.183594 82.195313 39.855469 127.992187.445312 32.527344-5.601563 64.15625-18.054688 94.023438-12.015625 28.820312-29.394531 54.703125-51.648437 76.929688-22.257813 22.230468-48.167969 39.574218-77.007813 51.554687-29.886719 12.417969-61.53125 18.449219-94.058593 17.929687-45.746094-.730468-89.933594-14.523437-127.796876-39.890624-29.859374-20.003907-54.621093-46.332032-72.621093-77.027344 21.191406 5.375 43.058593 8.089844 65.292969 8.089844 71.320312 0 138.367187-27.777344 188.789062-78.210938 50.40625-50.421875 78.167969-117.453125 78.167969-188.746094 0-22.289062-2.71875-44.195312-8.09375-65.40625 30.753906 18.03125 57.136719 42.839844 77.175781 72.761719zm0 0"/>
+            </g>
+         </symbol>
+
+         <symbol id="check" viewBox="0 0 515.556 515.556">
+            <g>
+               <path d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z"/>
+            </g>
+         </symbol>
+      </svg>
+
+      <div class="mask" id="mask">
+         <div class="loader">
+            <div class="smoke" id="smoke">
+               <span>L</span>
+               <span>o</span>
+               <span>a</span>
+               <span>d</span>
+               <span>i</span>
+               <span>n</span>
+               <span>g</span>
+            </div>
+         </div>
+      </div>
+
+         <div class="button-up" id="button-up">
+            <img src="img/header/up-chevron.svg" height="20px" alt="">
+         </div>
+
+
+         <header class="header" id="header">
+            <div class="header-container">
+               <div class="header-inner">
+                  <div class="header__logo">
+                     <a href="index.html">NL</a>
+                  </div>
+
+                  <div class="theme-switcher" id="theme-switcher">
+                     <div class="theme-switcher__body" id="theme-switcher__body">
+                     </div>
+                  </div>
+                  
+
+                  <div class="header-burger" id="header-burger">
+                     <div class="header-burger__menu" id="header-burger__menu">Меню</div>
+                     <div class="header-burger__icon">
+                     <span></span>
+                     </div>
+                  </div>
+
+
+                  <!-- выезжающее меню -->
+                  <div class="menu" id="menu">
+                     <div class="menu-top">
+                        <div class="menu__logo">
+                           <a href="#header">NL</a>
+                        </div>
+                        <div class="menu-close"></div>
+                     </div>
+                     <nav class="header-nav">
+                        <ul class="header-nav__list">
+                           <li>
+                              <a href="#header" class="header-nav__link">Главная</a>
+                           </li>
+                           <li>
+                              <a href="#about" class="header-nav__link">Обо мне</a>
+                           </li>
+                           <li>
+                           <a href="#technologies" class="header-nav__link">Технологии</a>
+                           </li>
+                           <li>
+                              <a href="#portfolio"  class="header-nav__link">Портфолио</a>
+                           </li>
+                           <li>
+                              <a href="#testimonials"  class="header-nav__link">Отзывы</a>
+                           </li>
+                           <li>
+                              <a href="#contacts" class="header-nav__link">Контакты</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <div class="menu-bottom">
+                        <div class="menu-social">
+                           <a href="https://vk.com/id7409631">
+                              <svg class="menu-social__icon">
+                                 <use xlink:href="#vk"></use>
+                              </svg>
+                           </a>
+                           <a href="https://www.instagram.com/nadyalenkovets/">
+                              <svg class="menu-social__icon">
+                                 <use xlink:href="#instagram"></use>
+                              </svg>
+                           </a>
+                           <a
+                              href="https://www.linkedin.com/in/%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0-%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D0%B5%D1%86-ab4057207/">
+                              <svg class="menu-social__icon">
+                                 <use xlink:href="#linkedIn"></use>
+                              </svg>
+                           </a>
+                           <a href="https://github.com/NadyaLenkovets">
+                              <svg class="menu-social__icon">
+                                 <use xlink:href="#gitHub"></use>
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+         <div class="intro">
+            <div class="intro-inner">
+               <div class="intro-left">
+                  <div class="intro-left__inner">
+                     <h3 class="intro__subtitle anim-items anim-no-hide">HTML-верстальщик</h3>
+                     <h1 class="intro__title anim-items anim-no-hide">Надежда Ленковец</h1>
+                     <div class="intro__btn-container anim-items anim-no-hide">
+                        <a href="#contacts" class="btn intro__btn">Написать мне</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="intro-right">
+                  <div class="intro-photo">
+                     <img src="img/intro/bg.jpg" alt="">
+                  </div>
+               </div>
+
+               <ul class="intro__social">
+                     <li class="anim-items anim-no-hide">
+                        <a href="https://vk.com/id7409631">
+                           <svg class="intro__social-icon">
+                              <use xlink:href="#vk"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="anim-items anim-no-hide">
+                        <a href="https://www.instagram.com/nadyalenkovets/">
+                           <svg class="intro__social-icon">
+                              <use xlink:href="#instagram"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="anim-items anim-no-hide">
+                        <a
+                           href="https://www.linkedin.com/in/%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0-%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D0%B5%D1%86-ab4057207/">
+                           <svg class="intro__social-icon">
+                              <use xlink:href="#linkedIn"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="anim-items anim-no-hide">
+                        <a href="https://github.com/NadyaLenkovets">
+                           <svg class="intro__social-icon">
+                              <use xlink:href="#gitHub"></use>
+                           </svg>
+                        </a>
+                     </li>
+               </ul>
+            </div>
+         </div>
+
+         <main>
+            <section class="about" id="about">
+               <div class="container">
+                  <div class="about-inner">
+                     <div class="about__photo">
+                        <div class="about__photo-container">
+                           <img src="img/about/1.jpg" alt="">
+                        </div>
+                     </div>
+                     <div class="about__content">
+                        <div class="anim anim-items anim-no-hide">
+                           <h4 class="about__pretitle pretitle">Информация</h4>
+                           <h2 class="about__title title">Обо мне</h2>
+                        </div>
+                        <p class="about__text-bold"><span>Привет!</span> Меня зовут Надежда.</p>
+                        <p class="about__text text">Я занимаюсь html-версткой сайтов. Мне 30 лет. Живу в Беларуси, город Гомель.</p>
+                        <p class="about__text text">Версткой занимаюсь недавно, поэтому работ и отзывов пока немного, но это впереди. Основная моя специальность - инженер-проектировщик в строительстве.</p>
+                        <p class="about__text text"><span>Образование:</span> высшее техническое, БелГУТ.</p>
+                        <p class="about__text text"><span>Уровень знания английского языка:</span> Intermediate.</p>
+                        <p class="about__text text">Также изучаю веб-дизайн и программирование, разработку сайтов. В конце 2021 года окончила практический курс <a href="https://www.instagram.com/frontend_everyday/">Александра Белькевича</a> по верстке и javascript. Все проекты на этом курсе выполняла самостоятельно с проверкой от преподавателя. Выполненные проекты можно посмотреть <a href="#portfolio">тут</a>.</p>
+                        <p class="about__text text">Это мой сайт-портфолио, который я создала сама с нуля. Буду здесь размещать свои работы, отзывы, мое резюме. Возможно однажды здесь будет и блог... Не пропустите)). </p>
+                        <div class="about__btn-container">
+                           <a href="#portfolio" class="about__btn btn btn-accent">Портфолио</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="technologies" id="technologies">
+               <div class="container">
+                  <div class="technologies-inner">
+                     <div class="anim anim-items anim-no-hide">
+                        <h4 class="technologies__pretitle pretitle">Как я работаю</h4>
+                        <h2 class="technologies__title title">Технологии</h2>
+                     </div>
+                     <div class="technologies__content">
+                        <div class="technologies-box">
+                           <div class="technologies-box__column technologies-box__column-left">
+                              <div class="technologies-box__item-large">
+                                 <h3 class="technologies__subtitle">Что я использую:</h3>
+                                 <ul class="technologies__list">
+                                    <li class="technologies-text">HTML5 / CSS3</li>
+                                    <li class="technologies-text">Javascript / jQuery</li>
+                                    <li class="technologies-text">Flexbox / Grid CSS</li>
+                                    <li class="technologies-text">Препроцессоры SASS / LESS</li>
+                                    <li>Git / Github</li>
+                                    <li>Gulp</li>
+                                    <li>Firebase</li>
+                                    <li>SVG спрайты</li>
+                                    <li>Иконочные, нестандартные шрифты</li>
+                                    <li>Анимации элементов</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="technologies-box__column technologies-box__column-right">
+                              <div class="technologies-box__container one">
+                                 <div class="spoiler__item">
+                                    <div class="spoiler__title">Что такое верстка?</div>
+                                    <div class="spoiler__text"><p>
+                                       Верстка (или HTML-верстка) - это один из этапов создания сайта.
+                                       Когда вы заходите на любую веб-страницу, вы видите какой-то, текст, фотографии, символы, кнопки, и прочую информацию. Задача верстальщика - написать код, который объяснит браузеру, где конкретно и как нужно отобразить эту информацию пользователю. А берет он эту информацию из макета, созданного дизайнером.
+                                    </p>
+                                    </div>
+                                 </div>
+                                 <div class="spoiler__item">
+                                    <div class="spoiler__title">Особенности работы</div>
+                                    <ul class="spoiler__list spoiler__text">
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#check"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Верстаю кроссбраузерно и адаптивно, т.е. мои сайты красиво и правильно отображаются во всех популярных
+                                             браузерах и на любых устройствах: компьютеры, планшеты, смартфоны.</div>
+                                       </li>
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#check"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Использую методологию БЭМ, семантические теги.</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="spoiler__item">
+                                    <div class="spoiler__title">Какие графические редакторы я использую?</div>
+                                    <ul class="spoiler__list spoiler__text">
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#figma"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Figma</div>
+                                       </li>
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#adobe-xd"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Adobe XD</div>
+                                       </li>
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#avocode"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Avocode</div>
+                                       </li>
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#photoshop"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Photoshop</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="spoiler__item">
+                                    <div class="spoiler__title">В каких редакторах кода я работаю?</div>
+                                    <ul class="spoiler__list spoiler__text">
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#vs-code"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">VS Code</div>
+                                       </li>
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#sublime-text"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Sublime Text</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="spoiler__item">
+                                    <div class="spoiler__title">Об этом сайте</div>
+                                    <div class="spoiler__text"><p> Этот сайт решила сделать для себя в качестве учебного проекта и в качестве сайта-портфолио. Все здесь сделала сама с нуля, без шаблонов и конструкторов. Буду очень рада вашим оценкам и конструктивной критике.</p>
+                                    <p>Постепенно буду добавлять что-то новенькое.</p>
+                                    </div>
+                                 </div>
+                                 <div class="spoiler__item">
+                                    <div class="spoiler__title">О моей работе</div>
+                                    <ul class="spoiler__list spoiler__text">
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#check"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Не работаю на конструкторах сайтов.</div>
+                                       </li>
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#check"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Проверяю свою верстку на валидаторе.</div>
+                                       </li>
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#check"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Постоянно изучаю новое.</div>
+                                       </li>
+                                       <li>
+                                          <svg class="spoiler__icon">
+                                             <use xlink:href="#check"></use>
+                                          </svg>
+                                          <div class="spoiler-icon__text">Каждый проект стараюсь сделать лучше предыдущего.</div>
+                                       </li>
+                                    </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+            </section>
+
+            <section class="portfolio" id="portfolio">
+               <div class="container">
+                  <div class="anim anim-items anim-no-hide">
+                     <h4 class="portfolio__pretitle pretitle">Мои работы</h4>
+                     <h2 class="portfolio__title title">Портфолио</h2>
+                     <p class="portfolio__text text">Здесь можно посмотреть проекты, которые я выполнила за последнее время. Скоро их станет больше...</p>
+                  </div>
+                  <div class="portfolio-inner">
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-glasshut">
+                        <img src="img/portfolio/glasshut.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">Glass Hut</h3>
+                           <p class="portfolio__item-text">Верстка многостраничного сайта.</p>
+                           <p class="portfolio__item-text">Flexbox, Grid CSS, SASS, Gulp.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/Glass-Hut/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/Glass-Hut/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-fujisushi">
+                        <img src="img/portfolio/fujisushi.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">FujiSushi</h3>
+                           <p class="portfolio__item-text">Верстка одностраничного сайта для ресторана японской кухни.</p>
+                           <p class="portfolio__item-text">Flexbox, SASS.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/FujiSushi/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/FujiSushi/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-odigo">
+                        <img src="img/portfolio/odigo.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">Odigo</h3>
+                           <p class="portfolio__item-text">Верстка одностраничного сайта для туристического агентства.</p>
+                           <p class="portfolio__item-text">Flexbox, Grid CSS, SASS.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/Odigo/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/Odigo/">Смотреть на Github</a>
+                     </div>
+                     
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-jogasana">
+                        <img src="img/portfolio/jogasana.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">JogaSana</h3>
+                           <p class="portfolio__item-text">Верстка одностраничного сайта для студии йоги.</p>
+                           <p class="portfolio__item-text">Flexbox, SASS.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/JogaSana/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/JogaSana/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-zharykova">
+                        <img src="img/portfolio/zharykova.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">Yulia Zharykova</h3>
+                           <p class="portfolio__item-text">Верстка многостраничного сайта для стилиста-имиджмейкера.</p>
+                           <p class="portfolio__item-text">Flexbox, Grid, SASS.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/JuliaZharykova/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/JuliaZharykova/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task1">
+                        <img src="img/portfolio/task1.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">Верстка CV-карточки</h3>
+                           <p class="portfolio__item-text">Верстка карточки с информацией.</p>
+                           <p class="portfolio__item-text">Flexbox, SASS, БЭМ.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task1/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task1/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task2">
+                        <img src="img/portfolio/task2.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">Верстка landing page</h3>
+                           <p class="portfolio__item-text">Верстка лендинга для дизайнерского агентства.</p>
+                           <p class="portfolio__item-text">JS, Flexbox, Grid, SASS.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task2/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task2/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task3">
+                        <img src="img/portfolio/task3.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">Верстка landing page</h3>
+                           <p class="portfolio__item-text">Верстка лендинга для автосервиса.</p>
+                           <p class="portfolio__item-text">JS, Flexbox, Grid, SASS.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task3/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task3/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task4">
+                        <img src="img/portfolio/task4.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">Верстка главной страницы магазина одежды.</h3>
+                           <p class="portfolio__item-text">Flexbox, Grid, SASS, БЭМ.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task4/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task4/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task5">
+                        <img src="img/portfolio/task5.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">Верстка страницы с большим слайдером</h3>
+                           <p class="portfolio__item-text">JS, Flexbox, Grid, SASS.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task5/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task5/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task6">
+                        <img src="img/portfolio/task6.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">Верстка UI Kit</h3>
+                           <p class="portfolio__item-text">Верстка основных элементов страницы.</p>
+                           <p class="portfolio__item-text">Flexbox, Grid, SASS, БЭМ.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task6/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task6/">Смотреть на Github</a>
+                     </div>
+
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task7">
+                        <img src="img/portfolio/task7.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка</h4>
+                           <h3 class="portfolio__item-title">Верстка Dashboard</h3>
+                           <p class="portfolio__item-text">Flexbox, Grid, SASS.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task7/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task7/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task8">
+                        <img src="img/portfolio/task8.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка и JS</h4>
+                           <h3 class="portfolio__item-title">Чат-бот</h3>
+                           <p class="portfolio__item-text">Разработка чат-бота с заготовленными фразами на чистом JS.</p>
+                           <p class="portfolio__item-text">Flexbox, SASS, БЭМ.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task8/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task8/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task9">
+                        <img src="img/portfolio/task9.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка и JS</h4>
+                           <h3 class="portfolio__item-title">Форма авторизации</h3>
+                           <p class="portfolio__item-text">Flexbox, JS, SASS, Firebase.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task9/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task11/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task10">
+                        <img src="img/portfolio/task10.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка и JS</h4>
+                           <h3 class="portfolio__item-title">Музыкальный плеер</h3>
+                           <p class="portfolio__item-text">Разработка музыкального плеера с использованием Firebase.</p>
+                           <p class="portfolio__item-text">Flexbox, Grid, JS, SASS, БЭМ, Firebase.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task10/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task10/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task11">
+                        <img src="img/portfolio/task11.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка и JS</h4>
+                           <h3 class="portfolio__item-title">Загрузка файлов в хранилище Firebase</h3>
+                           <p class="portfolio__item-text">Flexbox, JS, SASS, Firebase.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task11/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task11/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task12">
+                        <img src="img/portfolio/task12.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка и JS</h4>
+                           <h3 class="portfolio__item-title">Работа с данными</h3>
+                           <p class="portfolio__item-text">Создание таблицы с данными о пользователях.</p>
+                           <p class="portfolio__item-text">Flexbox, JS, SASS, БЭМ.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task12/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task12/">Смотреть на Github</a>
+                     </div>
+
+                     <div class="portfolio__item anim-items anim-no-hide" data-modal="#modal-task13">
+                        <img src="img/portfolio/task13.png" alt="">
+                        <div class="portfolio__item-overlay">
+                           <h4 class="portfolio__item-pretitle">HTML-верстка и JS</h4>
+                           <h3 class="portfolio__item-title">Интернет-магазина</h3>
+                           <p class="portfolio__item-text">Создание интернет-магазина для ресторана.</p>
+                           <p class="portfolio__item-text">Flexbox? Grid, JS, SASS, БЭМ.</p>
+                           <div class="portfolio__link-container">
+                              <a class="portfolio__link" href="https://nadyalenkovets.github.io/task13/">
+                                 <svg class="portfolio__link-icon">
+                                    <use xlink:href="#link"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="portfolio__item-link">
+                        <a href="https://nadyalenkovets.github.io/task13/">Смотреть на Github</a>
+                     </div>
+                     
+                  </div>
+                  <div class="portfolio__btn-container"> 
+                     <a class="portfolio__btn btn" href="https://github.com/NadyaLenkovets" >Смотреть на Github</a>
+                  </div>
+               </div>
+            </section>
+
+            <section class="testimonials" id="testimonials">
+               <div class="container">
+                  <div class="testimonials__top">
+                     <div class="anim anim-items anim-no-hide">
+                        <h4 class="testimonials__pretitle pretitle">О моей работе</h4>
+                        <h2 class="testimonials__title title">Отзывы</h2>
+                     </div>
+                  </div>
+                  <div class="testimonials-inner">
+                     <div class="testimonials__column testimonials__column-left">
+                     </div>
+
+                     <div class="testimonials__column testimonials__column-right">
+                        <div class="testimonials-slider" id="testimonials-slider">
+                           <div class="testimonials-slider__item">
+                              <div class="testimonials-slider__photo">
+                                 <img src="img/testimonials/2.png" alt="">
+                              </div>
+                              <div class="testimonials-slider__inner">
+                                 <p class="testimonials-slider__text">"Мне понравилась возможность выбрать тёмную, либо светлую тему на сайте, т.к. предпочитаю использовать тёмную, если это возможно. Плавность анимации и визуальные эффекты тоже понравились. В целом, все красиво!"</p>
+                                 <div class="testimonials-slider__bottom">
+                                    <p class="testimonials-slider__name">
+                                       Егор Ленковец
+                                    </p>
+                                    <p class="testimonials-slider__position">
+                                       Инженер-программист, г.Гомель
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="testimonials-slider__item">
+                              <div class="testimonials-slider__photo">
+                                 <img src="img/testimonials/5.png" alt="">
+                              </div>
+                              <div class="testimonials-slider__inner">
+                                 <p class="testimonials-slider__text">"У меня есть свой сайт! Когда я увидела, что у Нади поменялась профессия, то сразу решила воплотить свою мечту в реальность! Благодарю за труд, профессионализм и красоту!"</p>
+                                 <div class="testimonials-slider__bottom">
+                                    <p class="testimonials-slider__name">
+                                       Юлия Жарикова
+                                    </p>
+                                    <p class="testimonials-slider__position">
+                                       Имидж-стилист, г.Гомель
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="testimonials-slider__item">
+                              <div class="testimonials-slider__photo">
+                                 <img src="img/testimonials/3.png" alt="">
+                              </div>
+                              <div class="testimonials-slider__inner">
+                                 <p class="testimonials-slider__text">"Отличная работа для человека, который еще год назад не знал, что такое программирование. Очевидно, Надежду ждёт большое будущее в этой сфере. Желаю успехов в оствоении новых технологий."</p>
+                                 <div class="testimonials-slider__bottom">
+                                    <p class="testimonials-slider__name">
+                                       Владимир Богданов
+                                    </p>
+                                    <p class="testimonials-slider__position">
+                                       БелЖД, г.Гомель
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="testimonials-slider__item">
+                              <div class="testimonials-slider__photo">
+                                 <img src="img/testimonials/4.png" alt="">
+                              </div>
+                              <div class="testimonials-slider__inner">
+                                 <p class="testimonials-slider__text">"Мне нравится этот сайт, сделан качественно и со вкусом. Надежда охотно работает с заказчиком, предлагает дельные решения. Как говорится, сделано с душой и для людей))."</p>
+                                 <div class="testimonials-slider__bottom">
+                                    <p class="testimonials-slider__name">
+                                       Роман Войтенков
+                                    </p>
+                                    <p class="testimonials-slider__position">
+                                       Гомельгражданпроект, г.Гомель
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="contacts" id="contacts">
+               <div class="container">
+                  <div class="contacts-inner">
+                     <div class="anim anim-items anim-no-hide">
+                        <h4 class="contacts__pretitle pretitle">Свяжитесь со мной</h4>
+                        <h2 class="contacts__title title">Контакты</h2>
+                     </div>
+                     <div class="contacts__content">
+                        <div class="contacts__column contacts__column-left">
+                           <p class="contacts__text text">Если у вас есть классная идея для создания сайта или совместной
+                              работы, пишите мне на email:</p>
+      
+                           <div class="contacts__email">
+                              <a
+                                 href="https://mail.google.com/mail/u/2/#inbox?compose=CllgCJfttkwWkKCjkxHBXczJSgBzPjbVfHhsxzbKkvgVDMhHPjCqQGVSZvtBCZbSJzNBcGRMqJV">
+                                 nadya.lenkovets@gmail.com
+                              </a>
+                           </div>
+                        </div>
+                     
+                        <div class="contacts__column contacts__column-right">
+                           <p class="contacts__text text">Я всегда на связи в соцсетях. Буду рада ответить и пообщаться.</p>
+                           <div class="contacts__social">
+                              <div class="contacts__social-item">
+                                 <a href="https://vk.com/id7409631">
+                                    <svg class="contacts__social-icon">
+                                       <use xlink:href="#vk"></use>
+                                    </svg>
+                                 </a>
+                              </div>
+                              <div class="contacts__social-item">
+                                 <a href="https://www.instagram.com/nadyalenkovets/">
+                                    <svg class="contacts__social-icon">
+                                       <use xlink:href="#instagram"></use>
+                                    </svg>
+                                 </a>
+                              </div>
+                              <div class="contacts__social-item">
+                                 <a href="https://www.linkedin.com/in/%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0-%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D0%B5%D1%86-ab4057207/">
+                                    <svg class="contacts__social-icon">
+                                       <use xlink:href="#linkedIn"></use>
+                                    </svg>
+                                 </a>
+                              </div>
+                              <div class="contacts__social-item">
+                                 <a href="https://github.com/NadyaLenkovets">
+                                    <svg class="contacts__social-icon">
+                                       <use xlink:href="#gitHub"></use>
+                                    </svg>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>     <!--contacts__content-->
+                  </div>     <!--contacts-inner-->
+               </div>     <!--container-->
+            </section>
+         </main>
+         
+
+         <footer class="footer">
+            <div class="container">
+               <div class="footer__inner">
+                  <div class="footer__column">
+                     <div class="footer__logo">
+                        <a href="#header">NL</a>
+                     </div>
+                     <div class="footer__location">
+                           Gomel, Belarus
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </footer>
+
+
+
+
+       <!--Modals-->
+
+      <!--FujiSushi-->
+
+      <div class="modal" id="modal-fujisushi">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>FujiSushi</span> - ресторан японской кухни</h2>
+                  <p class="modal__text">Макет взяла из интернета, перевела на русский язык и многое изменила. Верстала на HTML5, CSS3 c применением Flexbox. Использовала препроцессор SASS.
+                  </p>
+                  <p class="modal__text">Сделала слайдер с фото на основном экране, слайдер с отзывами клиентов, фиксированную шапку сайта с навигацией и меню блюд с фильтром по категориям. Пока верстала меню с аппетитными фоточками, очень сильно захотела кушать)).</p>
+                  <p class="modal__text">Адаптировала страницу под любой размер устройств (минимально 320px).</p>
+                  <p class="modal__text">Добавила анимации при появлении элементов, эффекты при наведении на кнопки, ссылки.</p>
+
+                  <a href="https://nadyalenkovets.github.io/FujiSushi/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/FujiSushi/"><img src="img/portfolio/fujisushi.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Odigo-->
+
+      <div class="modal" id="modal-odigo">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>Odigo</span> - путешествия по Японии</h2>
+                  <p class="modal__text">Этот макет нашла в интернете. Верстала на HTML5, CSS3 c применением Flexbox, Grid CSS. Использовала препроцессор SASS.
+                  </p>
+                  <p class="modal__text">Адаптировала страницу под любой размер устройств (минимально 320px).</p>
+                  <p class="modal__text">Добавила анимации при появлении элементов, эффекты при наведении на кнопки и ссылки.</p>
+
+                  <a href="https://nadyalenkovets.github.io/Odigo/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/Odigo/"><img src="img/portfolio/odigo.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--JogaSana-->
+
+      <div class="modal" id="modal-jogasana">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>JogaSana</span> - студия йоги</h2>
+                  <p class="modal__text">Макет JogaSana нашла в интернете, перевела на русский язык, кое-что изменила. Верстала на HTML5, CSS3 c применением Flexbox. Использовала препроцессор SASS.
+                  </p>
+                  <p class="modal__text">На главном экране полноэкранный слайдер с анимированными заголовками, блок с отзывами также в виде слайдера.</p>
+                  <p class="modal__text">Адаптировала страницу под любой размер устройств (минимально 320px).</p>
+                  <p class="modal__text">Добавила анимации при появлении элементов, эффекты при наведении на кнопки, ссылки.</p>
+
+                  <a href="https://nadyalenkovets.github.io/JogaSana/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/JogaSana/"><img src="img/portfolio/jogasana.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--GlassHut-->
+
+      <div class="modal" id="modal-glasshut">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>Glass Hut</span> - сервис аренды стеклянных хижин</h2>
+                  <p class="modal__text">Макет Glass Hut взяла из интернета. Верстала на HTML5, CSS3 c применением Flexbox и Grid CSS. Использовала препроцессор SASS.
+                  </p>
+                  <p class="modal__text">Сайт многостраничный, собирала с помощью Gulp.</p>
+                  <p class="modal__text">Фиксированная шапка с навигацией, аккордеон на jQuery в разделе FAQ и Booking, слайдеры с фото.</p>
+                  <p class="modal__text">Адаптировала страницы под любой размер устройств (минимально 320px).</p>
+                  <p class="modal__text">Сделала эффекты при наведении на кнопки, ссылки.</p>
+
+                  <a href="https://nadyalenkovets.github.io/Glass-Hut/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/Glass-Hut/"><img src="img/portfolio/glasshut.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Zharykova-->
+
+      <div class="modal" id="modal-zharykova">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>Yulia Zharykova</span> - сайт-визитка для стилиста-имиджмейкера Юлии Жариковой</h2>
+                  <p class="modal__text">Сайт-визитка для стилиста-имиджмейкера. Создан при помощи HTML, CSS, JS, Flexbox, Grid.
+                  </p>
+                  <p class="modal__text">Дизайн разрабатывала самостоятельно.</p>
+                  <p class="modal__text">Адаптировала страницы под любой размер устройств (минимально 320px).</p>
+                  <p class="modal__text">Сделала эффекты при наведении на кнопки, ссылки.</p>
+                  <p class="modal__text">Посмотреть действующий сайт можно по <a href="https://zharykova.iam.by/?ig=julia">ссылке</a>.</p>
+
+                  <a href="https://nadyalenkovets.github.io/JuliaZharykova/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/JuliaZharykova/"><img src="img/portfolio/zharykova.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task1-->
+
+      <div class="modal" id="modal-task1">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>Task 1</span> - верстка CV-карточки.</h2>
+                  <p class="modal__text">Первый проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox.
+                  </p>
+                  <p class="modal__text">При работе использовала методологию БЭМ.</p>
+                  <p class="modal__text">Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Карточка адаптирована под любой размер устройств (минимально 320px).</p>
+
+
+                  <a href="https://nadyalenkovets.github.io/task1/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task1/"><img src="img/portfolio/task1.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task2-->
+
+      <div class="modal" id="modal-task2">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>Task 2</span> - верстка Landing Page.</h2>
+                  <p class="modal__text">Проект с практического курса  <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, Grid CSS. Без jQuery!
+                  </p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+
+
+                  <a href="https://nadyalenkovets.github.io/task2/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task2/"><img src="img/portfolio/task2.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task3-->
+
+      <div class="modal" id="modal-task3">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>Task 3</span> - верстка Landing Page.</h2>
+                  <p class="modal__text">Проект с практического курса  <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, Grid CSS. Без jQuery!
+                  </p>
+                  <p class="modal__text">При прокрутке страницы начинает работать счетчик клиентов. Табы написаны на JS.</p>
+                  <p class="modal__text">При клике на кнопку проигрывания видео открывается модальное окно, в которое вставлено видео с YouTube.</p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+
+
+                  <a href="https://nadyalenkovets.github.io/task3/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task3/"><img src="img/portfolio/task3.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task4-->
+
+      <div class="modal" id="modal-task4">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>Task 4</span> - верстка главной страницы магазина одежды.</h2>
+                  <p class="modal__text">Проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, Grid CSS. Без jQuery!
+                  </p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница всегда высотой на 100% экрана (кроме планшетной и мобильной версии).</p>
+                  <p class="modal__text">Блоки с картинками выполнены с помощью Grid.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+
+
+                  <a href="https://nadyalenkovets.github.io/task4/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task4/"><img src="img/portfolio/task4.png" alt=""></a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task5-->
+
+      <div class="modal" id="modal-task5">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>Task 5</span> - верстка страницы с большим слайдером.</h2>
+                  <p class="modal__text">Проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, Grid CSS. Без jQuery!
+                  </p>
+                  <p class="modal__text">Страница всегда шириной и высотой на 100% экрана (кроме мобильной версии).</p>
+                  <p class="modal__text">Слайдер написан на чистом javascript.</p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>          
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+
+                  <a href="https://nadyalenkovets.github.io/task5/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task5/"><img src="img/portfolio/task5.png" alt=""></a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task6-->
+
+      <div class="modal" id="modal-task6">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>Task 6</span> - верстка UI Kit.</h2>
+                  <p class="modal__text">Проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, Grid CSS. Без jQuery!
+                  </p>
+                  <p class="modal__text">Верстка типовых элементов страницы: иконки, элементы форм, кнопки, лоадеры, всплывающие подсказки, списки, звездный рейтинг, модальные окна, карточки.</p>
+                  <p class="modal__text">Стилизация select с помощью библиотеки choices.js.</p>
+                  <p class="modal__text">Стилизация графиков с помощью библиотеки chart.js.</p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+
+                  <a href="https://nadyalenkovets.github.io/task6/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task6/"><img src="img/portfolio/task6.png" alt=""></a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task7-->
+
+      <div class="modal" id="modal-task7">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка</h3>
+                  <h2 class="modal__title"><span>Task 7</span> - верстка Dashboard.</h2>
+                  <p class="modal__text">Проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, Grid CSS. Без jQuery!
+                  </p>
+                  <p class="modal__text">На разрешении 1920 на 1080 страница занимает 100% экрана.</p>
+                  <p class="modal__text">Верстка прогресс-баров на чистом HTML/CSS.</p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+
+
+                  <a href="https://nadyalenkovets.github.io/task7/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task7/"><img src="img/portfolio/task7.png" alt=""></a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task8-->
+
+      <div class="modal" id="modal-task8">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка и JS</h3>
+                  <h2 class="modal__title"><span>Task 8</span> - чат-бот.</h2>
+                  <p class="modal__text">Проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox. Без jQuery!
+                  </p>
+                  <p class="modal__text">По заданию необходимо было придумать 5-10 фраз, на которые бот может ответить. Регистр букв в вопросе не должен учитываться.</p>
+                  <p class="modal__text">Фразы для бота:</p>
+                  <ul class="modal__list">
+                     <li class="modal__list-item">
+                        Какой сегодня день?
+                     </li>
+                     <li class="modal__list-item">
+                        Сколько дней осталось до Нового года?
+                     </li>
+                     <li class="modal__list-item">
+                        Хочу записаться на стрижку к Алине.
+                     </li>
+                     <li class="modal__list-item">
+                        В субботу в 10:30.
+                     </li>
+                     <li class="modal__list-item">
+                        Расскажи шутку (можно вводить несколько раз).
+                     </li>
+                     <li class="modal__list-item">
+                        Скинь мемасик.
+                     </li>
+                     <li class="modal__list-item">
+                        Пока.
+                     </li>
+                  </ul>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+
+
+                  <a href="https://nadyalenkovets.github.io/task8/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task8/"><img src="img/portfolio/task8.png" alt=""></a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task9-->
+
+      <div class="modal" id="modal-task9">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка и JS</h3>
+                  <h2 class="modal__title"><span>Task 9</span> - форма авторизации.</h2>
+                  <p class="modal__text">Проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, Firebase. Без jQuery!
+                  </p>
+                  <p class="modal__text">По заданию нужно было сделать регистрацию и авторизацию пользователя, используя сервис Firebase. И это был первый мой опыт работы с Firebase и бэкэндом вообще)).</p>
+                  <p class="modal__text">Также нужно было создать страницу, где можно посмотреть список зарегистрированных пользователей.</p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+
+
+                  <a href="https://nadyalenkovets.github.io/task9/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task9/"><img src="img/portfolio/task9.png" alt=""></a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task10-->
+
+      <div class="modal" id="modal-task10">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка и JS</h3>
+                  <h2 class="modal__title"><span>Task 10</span> - музыкальный плеер.</h2>
+                  <p class="modal__text">Проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, Firebase. Без jQuery!
+                  </p>
+                  <p class="modal__text">Это задание попало прям в самое сердце)), так как было довольно непростое и с музыкой пришлось поработать.</p>
+                  <p class="modal__text">По заданию нужно было сделать музыкальный плеер. При клике на обложку альбома должен открываться список песен.</p>
+                  <p class="modal__text">Песню можно воспроизводить, выключать, перематывать кликом на прогресс-бар, переключать.</p>
+                  <p class="modal__text">Вверху страницы есть поиск альбомов по названию.</p>
+                  <p class="modal__text">Для хранения треков использовала Firebase Storage. Поработала с массивами и объектами.</p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+
+
+                  <a href="https://nadyalenkovets.github.io/task10/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task10/"><img src="img/portfolio/task10.png" alt=""></a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task11-->
+
+      <div class="modal" id="modal-task11">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка и JS</h3>
+                  <h2 class="modal__title"><span>Task 11</span> - загрузка файлов.</h2>
+                  <p class="modal__text">Проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, Firebase. Без jQuery!
+                  </p>
+                  <p class="modal__text">По заданию нужно было сделать загрузку файлов. После загрузки открывается таб "recent", где можно просмотреть последние 5 загруженных файлов. При клике на "View all uploads" можно посмотреть все файлы, которые были загружены.</p>
+                  <p class="modal__text">Поработала с Firebase Storage и Firebase Firestore, File API, Drag & Drop.</p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+
+
+                  <a href="https://nadyalenkovets.github.io/task11/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task11/"><img src="img/portfolio/task11.png" alt=""></a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task12-->
+
+      <div class="modal" id="modal-task12">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка и JS</h3>
+                  <h2 class="modal__title"><span>Task 12</span> - работа с данными.</h2>
+                  <p class="modal__text">Проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, JSON. Без jQuery!
+                  </p>
+                  <p class="modal__text">По заданию нужно было создать таблицу из 50 рандомных данных. Данные хранились в локальном JSON файле.</p>
+                  <p class="modal__text">Внизу страницы есть select, где можно выбрать количество отображаемых элементов, и пагинация.</p>
+                  <p class="modal__text">Наверху страницы есть фильтр по статусу оплаты (Paid/Unpaid/...). Ниже есть фильтр, при нажатии на который появляется окно, где также можно фильтровать по имени пользователей, дате регистрации, активным/неактивным пользователям.</p>
+                  <p class="modal__text">Также рядом есть поиск по имени пользователя. Отрабатывает при клике на Enter.</p>
+                  <p class="modal__text">При клике на стрелочку около имени пользователя может открыться еще одна подтаблица, которая относится к этому пользователю.</p>
+                  <p class="modal__text">Также при клике на три точки в таблице показывается всплывающее окно.</p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+                  
+
+                  <a href="https://nadyalenkovets.github.io/task12/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task12/"><img src="img/portfolio/task12.png" alt=""></a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--Task13-->
+
+      <div class="modal" id="modal-task13">
+         <div class="modal__dialog">
+            <div class="modal__close" data-close=""></div>
+
+            <div class="modal__inner">
+               <div class="modal__content">
+                  <h3 class="modal__pretitle pretitle">HTML-верстка и JS</h3>
+                  <h2 class="modal__title"><span>Task 13</span> - интернет-магазин.</h2>
+                  <p class="modal__text">Проект с практического курса <a href="https://www.instagram.com/frontend_everyday/">@frontend_everyday</a> по верстке и javascript. Создан при помощи HTML, CSS, JS, Flexbox, Grid, JSON. Без jQuery!
+                  </p>
+                  <p class="modal__text">По заданию нужно было создать интернет-магазин для ресторана. На главной странице есть список блюд, которые можно фильтровать по категориям (Hot Dishes, Grill, Dessert...). Информация о блюдах хранится в локальном JSON файле.</p>
+                  <p class="modal__text">Наверху страницы есть поиск блюд по названию, а также сегодняшняя дата.</p>
+                  <p class="modal__text">При клике на карточку блюда оно попадает в корзину. В корзине можно изменить количество блюд или удалить их из корзины.</p>
+                  <p class="modal__text">При клике на "Continue To Payment" появляется окошко с информацией об оплате. При правильном заполнении всех полей можно подтвердить и отправить заказ.</p>
+                  <p class="modal__text">При работе использовала методологию БЭМ. Макет был предоставлен на курсе.</p>
+                  <p class="modal__text">Страница адаптирована под любой размер устройств (минимально 320px).</p>
+                  
+
+                  <a href="https://nadyalenkovets.github.io/task13/" class="modal__link">Смотреть на
+                     <span>GitHub</span></a>
+               </div>
+
+               <div class="modal__image">
+                  <a href="https://nadyalenkovets.github.io/task13/"><img src="img/portfolio/task13.png" alt=""></a>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+      
+
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+
+   </html>
