@@ -1113,6 +1113,7 @@ h6 {
 }
 
 .about__text a {
+  display: inline-block;
   color: var(--accent-color);
   font-weight: 500;
   transition: 0.4s ease;

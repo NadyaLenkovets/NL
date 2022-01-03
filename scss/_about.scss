@@ -68,8 +68,8 @@
    color: var(--main-text);
    font-weight: 300;
    letter-spacing: 1px;
-   
    & a {
+      display: inline-block;
       color: var(--accent-color);
       font-weight: 500;
       transition: 0.4s ease;
