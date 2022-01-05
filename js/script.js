@@ -118,13 +118,21 @@ $(function () {
 
    $('#testimonials-slider').slick({
       infinite: true,
-      // autoplay: true,
+      autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
       dots: false,
       fade: false,
       vertical: true,
+      responsive: [
+         {
+            breakpoint: 991,
+            settings: {
+               arrows: false,
+            }
+         }
+      ]
    });
 
 

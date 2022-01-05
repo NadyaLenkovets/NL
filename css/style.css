@@ -1797,14 +1797,6 @@ h6 {
   border-color: var(--accent-color);
 }
 
-@media (max-width: 991px) {
-  .slick-next {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
 .slick-prev {
   position: absolute;
   top: 47%;
@@ -1830,14 +1822,6 @@ h6 {
 
 .slick-prev:hover::before {
   border-color: var(--accent-color);
-}
-
-@media (max-width: 991px) {
-  .slick-prev {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 .contacts {

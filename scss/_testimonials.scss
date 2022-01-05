@@ -115,11 +115,6 @@
          border-color: var(--accent-color);
       }
    }
-   @media (max-width: 991px) {
-      display: none;
-      opacity: 0;
-      visibility: hidden;
-   }
 }
 .slick-prev {
    position: absolute;
@@ -145,10 +140,5 @@
       &::before {
          border-color: var(--accent-color);
       }
-   }
-   @media (max-width: 991px) {
-      display: none;
-      opacity: 0;
-      visibility: hidden;
    }
 }
