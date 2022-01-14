@@ -1165,6 +1165,18 @@ h6 {
 
 .about__btn {
   margin: 10px 0px 0px 0px;
+  min-width: 193px;
+}
+
+.about__btn:first-of-type {
+  margin: 10px 10px 0px 0px;
+}
+
+@media (max-width: 420px) {
+  .about__btn {
+    display: block;
+    width: 100%;
+  }
 }
 
 .technologies {

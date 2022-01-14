@@ -113,4 +113,12 @@
 }
 .about__btn {
    margin: 10px 0px 0px 0px;
+   min-width: 193px;
+   &:first-of-type {
+      margin: 10px 10px 0px 0px;
+   }
+   @media (max-width: 420px) {
+      display: block;
+      width: 100%;
+   }
 }
